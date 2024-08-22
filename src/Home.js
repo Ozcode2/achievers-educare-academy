@@ -20,7 +20,11 @@ const Home = () => {
     <div className="home">
       <Slider {...settings}>
         <div className="home_wrap">
-          <img className="home__image" alt="" src="./cbt.png" />
+          <img
+            className="home__image"
+            alt=""
+            src={process.env.PUBLIC_URL + "/cbt.png"}
+          />
           <div className="imageOne">
             <h1 className="home__imageText">
               INTENSE CBTs<i>...</i>
@@ -42,7 +46,11 @@ const Home = () => {
           </div>
         </div>
         <div className="home_wrap">
-          <img className="home__imageOne" alt="" src="./class.png" />
+          <img
+            className="home__imageOne"
+            alt=""
+            src={process.env.PUBLIC_URL + "/class.png"}
+          />
           <div className="imageOne">
             <h1 className="home__imageTextOne">
               CONDUCIVE CLASSROOMS<i>...</i>
@@ -64,7 +72,11 @@ const Home = () => {
           </div>
         </div>
         <div className="home_wrap">
-          <img className="home__imageTwo" alt="" src="./venue.png" />
+          <img
+            className="home__imageTwo"
+            alt=""
+            src={process.env.PUBLIC_URL + "/venue.png"}
+          />
           <div className="imageOne">
             <h1 className="home__imageTextTwo">
               QUALIFIED TUTORS<i>...</i>
