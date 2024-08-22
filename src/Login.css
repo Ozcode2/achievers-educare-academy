@@ -163,8 +163,8 @@ input:focus {
     outline: none;
 }
 
-@media(max-width: 340px) {
+/* @media(max-width: 340px) {
     .login__container {
         transform: scale(0.7);
     }
-}
+} */

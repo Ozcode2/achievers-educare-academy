@@ -3,21 +3,18 @@ import "./Product.css";
 import { useStateValue } from "./StateProvider";
 import { useNavigate } from "react-router-dom";
 
-
 const Product = ({ id, title, image }) => {
   const [{ user }] = useStateValue();
   const navigate = useNavigate();
 
   const handleEnrollClick = () => {
-
     if (!user) {
       // Show an alert if the user is not signed in
       alert("Please sign in to enroll in the course.");
       navigate("/login"); // Optionally, redirect to the login page
       return;
     }
-    // const phoneNumber = "2348071342141";
-    const phoneNumber = "2348162066733";
+    const phoneNumber = "2348071342141";
     const message = `Hello, I am interested in enrolling for the course: ${title}`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message

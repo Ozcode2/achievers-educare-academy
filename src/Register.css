@@ -210,8 +210,8 @@ input:focus {
     outline: none;
 }
 
-@media(max-width: 308px) {
+/* @media(max-width: 308px) {
     .register__container {
         transform: scale(0.7);
     }
-}
+} */

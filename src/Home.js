@@ -53,7 +53,7 @@ const Home = () => {
           />
           <div className="imageOne">
             <h1 className="home__imageTextOne">
-              CONDUCIVE CLASSROOMS<i>...</i>
+              IDEAL CLASSROOMS<i>...</i>
             </h1>
             <span className="home__textBlock">
               We possess well ventilated and
