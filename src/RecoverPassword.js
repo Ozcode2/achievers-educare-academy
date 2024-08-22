@@ -31,7 +31,7 @@ const RecoverPassword = () => {
       <Link to="/achievers-educare-academy">
         <img
           className="recoverPassword__logo"
-          src="./achievers.png"
+          src="%PUBLIC_URL%/achievers.png"
           alt="Achievers Logo"
         />
       </Link>

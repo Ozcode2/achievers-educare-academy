@@ -85,7 +85,7 @@ const Register = () => {
       <Link to="/achievers-educare-academy">
         <img
           className="register__logo"
-          src="./achievers.png"
+          src="%PUBLIC_URL%/achievers.png"
           alt="Achievers Logo"
         />
       </Link>

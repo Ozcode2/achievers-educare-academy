@@ -54,7 +54,7 @@ const Login = () => {
         <img
           className="login__logo"
           alt="Achiever Logo"
-          src="./achievers.png"
+          src="%PUBLIC_URL%/achievers.png"
         />
       </Link>
 

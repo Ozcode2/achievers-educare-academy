@@ -5,7 +5,11 @@ const About = () => {
   return (
     <div className="about">
       <div className="about_container">
-        <img className="about_image" src="./Femi.png" alt="Femi"></img>
+        <img
+          className="about_image"
+          src="%PUBLIC_URL%/Femi.png"
+          alt="Femi"
+        ></img>
         <h1 className="about_name">Mr. Femi Ajetunmobi Bethel, CEO.</h1>
         <p className="about_info">
           "Achievers Educare Academy: Empowering students to reach their full
