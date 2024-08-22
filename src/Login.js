@@ -54,7 +54,7 @@ const Login = () => {
         <img
           className="login__logo"
           alt="Achiever Logo"
-          src="%PUBLIC_URL%/achievers.png"
+          src={process.env.PUBLIC_URL + "/achievers.png"}
         />
       </Link>
 

@@ -7,7 +7,7 @@ const About = () => {
       <div className="about_container">
         <img
           className="about_image"
-          src="%PUBLIC_URL%/Femi.png"
+          src={process.env.PUBLIC_URL + "/Femi.png"}
           alt="Femi"
         ></img>
         <h1 className="about_name">Mr. Femi Ajetunmobi Bethel, CEO.</h1>

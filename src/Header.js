@@ -34,7 +34,7 @@ const Header = ({ setSearchQuery }) => {
     <div className="header">
       <Link to="/achievers-educare-academy">
         <img
-          src="%PUBLIC_URL%/achievers.png"
+          src={process.env.PUBLIC_URL + "/achievers.png"}
           className="header_logo"
           width="100"
           height="100"

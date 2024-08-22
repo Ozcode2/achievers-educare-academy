@@ -269,3 +269,11 @@ i {
         top: 380px;
     }
 }
+
+@media (max-width: 310px) {
+    .home__image,
+    .home__imageOne,
+    .home__imageTwo {
+        margin-top: -160px;
+    }
+}
