@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Amazon+Ember&display=swap");
+
+.header {
+    background: linear-gradient(to right, #720d72, #0b0b38);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Amazon Ember', Arial, sans-serif;
+}
+
+.header_logo {
+    object-fit: contain;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 18px;
+}
+
+.header_title{
+    display: block;
+}
+
+.header_title h1{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 3px 2px 3px #666;
+}
+
+.header_title span{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 40px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #afabab;
+    font-style: italic;
+}
+
+.header__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header__optionLineOne {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.header__optionLineTwo {
+    font-size: 15px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.header__link {
+    margin-left: 10px;
+    color: #afabab;
+    text-decoration: none;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    color: #afabab;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header__searchInput:focus {
+    outline: none;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    background-color: #fff;
+    margin-left: 20px;
+}
+
+.header__searchInput {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 7px;
+    font-size: 16px;
+}
+
+.header__icon {
+    display: flex;
+    padding: 11px;
+    background-color: #ed8c0d;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: 1px solid #ed8c0d;
+}
+
+.header__searchIcon {
+    margin-right: -1px;
+    font-size: 20px;
+   
+}
+
+.header__searchInput::placeholder {
+    font-weight: 600;
+    font-size: 14px;
+}
+ 
+@media(min-width: 320px) and (max-width: 768px) {
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 5px;
+    }
+
+    .header__link {
+        margin-top: 10px;
+    }
+
+    .header__logo {
+        width: 60px;
+        margin-top: 5px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .header__optionLineOne {
+        font-size: 8px;
+    }
+
+    .header__optionLineTwo {
+        font-size: 12px;
+    }
+
+    .header__searchInput {
+        padding: 5px;
+    }
+}
+
+@media(min-width: 376px) and (max-width: 405px) {
+    .header {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .header>* {
+        margin-left: -25px;
+        transform: scale(0.8);
+    }
+
+}
+
+@media (max-width: 540px) {
+    .header__link {
+        margin-top: 10px;
+    }
+
+    .header__searchInput::placeholder {
+        font-size: 10px;
+    }
+
+    .header_title {
+        display: none;
+    }
+
+}
+
+@media(min-width: 541px) and (max-width: 800px) {
+
+    .header__searchInput::placeholder {
+        font-size: 12px;
+    }
+
+}
+
+@media(max-width: 375px) {
+    .header_title h1 {
+        font-size: 20px;
+    }
+
+
+    .header {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .header>* {
+        margin-left: -10px;
+        transform: scale(0.9);
+        margin-top: -10px;
+    }
+
+}

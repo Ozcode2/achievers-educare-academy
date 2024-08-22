@@ -1,0 +1,217 @@
+.register {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to right, purple, darkblue);
+}
+
+.register__logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.register__container {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.register__container>h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
+
+.register__container>form>h5 {
+    margin-bottom: 5px;
+}
+
+.register__container>form>input {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    width: 98%;
+    border-top: none;
+}
+
+.register__container>p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.register__signInButton {
+    background: #f0c14b;
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.register__signInButton:hover {
+    background-color: #ffa500;
+}
+
+.register__signInButton:focus {
+    outline: none;
+    border-color: none;
+}
+
+
+.register p {
+    font-weight: 500;
+}
+
+input[type="text"] {
+    border-radius: 3px;
+    outline: none;
+    border-top: none !important;
+    padding-left: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+input[type="password"] {
+    border-radius: 3px;
+    outline: none;
+    border-top: none !important;
+    padding-left: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+input[type="password"]::placeholder {
+    position: absolute;
+    margin-left: -1px;
+    margin-top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #918f8f;
+}
+
+input[type="password"]:focus {
+    outline: 3px solid lightblue !important;
+    border-color: #000;
+}
+
+input:focus {
+    outline: 3px solid lightblue;
+    border-color: #000;
+}
+
+.register__toLogin {
+    text-decoration: none;
+    margin-left: 5px;
+    color: #0066c0;
+}
+
+.register__toLogin:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #c45500;
+}
+
+.password__info {
+    font-size: 12px;
+    position: relative;
+    bottom: 5px;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.password__error {
+    font-size: 12px;
+    position: relative;
+    bottom: 5px;
+    font-weight: 600;
+    color: brown;
+}
+
+.password__error>* {
+    margin: 5px;
+}
+
+.password__error i {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.error__message>* {
+    margin: 5px;
+}
+
+.error__message i {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.error__message {
+    font-size: 12px;
+    position: relative;
+    bottom: 5px;
+    font-weight: 600;
+    color: brown;
+}
+
+.password__infoIcon {
+    margin-bottom: 0px;
+    color: #0066c0;
+}
+
+.password__errorIcon {
+    margin-bottom: 5px;
+    color: brown;
+}
+
+.errors-modal {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    place-content: center;
+    text-align: center;
+    top: -350px;
+    position: relative;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.clicks {
+    height: 30px;
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 10px 20px;
+    background-color: rgb(7, 7, 144);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+@media(max-width: 308px) {
+    .register__container {
+        transform: scale(0.7);
+    }
+}

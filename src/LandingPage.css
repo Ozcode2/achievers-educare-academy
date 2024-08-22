@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Amazon+Ember&display=swap");
+
+.landing-page {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: #fff;
+}
+
+.home__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    font-family: 'Amazon Ember', Arial, sans-serif;
+}
+
+@media (min-width: 370px) and (max-width: 500px) {
+    .home__row {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -30px;
+    }
+
+}
+
+
+@media (max-width: 369px) {
+    .home__row {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: -60px;
+    }
+
+}
+
+@media(min-width: 501px) and (max-width: 768px) {
+    .home__row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1000px) {
+    .home__row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
