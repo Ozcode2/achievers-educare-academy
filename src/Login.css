@@ -1,6 +1,6 @@
 .login {
     background-color: transparent;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,8 +163,8 @@ input:focus {
     outline: none;
 }
 
-/* @media(max-width: 340px) {
+@media(max-width: 340px) {
     .login__container {
         transform: scale(0.7);
     }
-} */
+}

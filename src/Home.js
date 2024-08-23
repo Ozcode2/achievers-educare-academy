@@ -15,7 +15,7 @@ const Home = () => {
     autoplay: true,
     autoplaySpeed: 5000,
   };
-
+  
   return (
     <div className="home">
       <Slider {...settings}>

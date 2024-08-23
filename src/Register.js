@@ -4,8 +4,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { auth, db } from "./firebase";
 import { FaInfo } from "react-icons/fa";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { useStateValue } from "./StateProvider";
-import { doc, setDoc } from "firebase/firestore";
 
 const Register = () => {
   const navigate = useNavigate();

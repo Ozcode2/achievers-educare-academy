@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Home from "./Home";
 import Footer from "./Footer";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Login from "./Login";
 import Register from "./Register";
 import RecoverPassword from "./RecoverPassword";
@@ -14,7 +14,6 @@ import About from "./About";
 function App() {
   const [{}, dispatch] = useStateValue();
   const [searchQuery, setSearchQuery] = useState("");
-  const navigate = useNavigate();
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
