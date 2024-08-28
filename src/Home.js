@@ -35,8 +35,7 @@ const Home = () => {
             <span className="home__textBlock">
               to enable our<i id="key">jambites</i>
             </span>
-            <span className="home__textBlock">have hands-on experience</span>
-            <span className="home__textBlock">before their exams.</span>
+            <span className="home__textBlock">have hands-on JAMB experience.</span>
             <Link to="/login">
               <button className="sign-up" disabled>
                 Sign-in To get Full Experience

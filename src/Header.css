@@ -171,12 +171,8 @@
         font-size: 10px;
     }
 
-    /* .header_title {
+    .header_title {
         display: none;
-    } */
-
-    .header_title span {
-        font-size: 8px;
     }
 
 }
@@ -206,10 +202,4 @@
         margin-top: -10px;
     }
 
-}
-
-@media(max-width: 310px) {
-   .header_title {
-        display: none;
-   }
 }

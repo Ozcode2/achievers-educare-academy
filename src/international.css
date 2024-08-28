@@ -13,7 +13,7 @@
 .page__row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    gap: 0;
     /* margin-bottom: 40px; */
     background-color: #ccc;
     padding-top: 20px;
