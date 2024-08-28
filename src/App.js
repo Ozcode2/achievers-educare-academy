@@ -10,6 +10,8 @@ import { useStateValue } from "./StateProvider";
 import React, { useEffect, useState } from "react";
 import LandingPage from "./LandingPage";
 import About from "./About";
+import HomePage from "./HomePage";
+import International from "./International";
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -43,9 +45,33 @@ function App() {
           path="/achievers-educare-academy"
           element={
             <React.Fragment>
+              <Header />
+              <Home />
+              <HomePage />
+              <Footer />
+            </React.Fragment>
+          }
+        />
+
+        <Route
+          path="/local-exams"
+          element={
+            <React.Fragment>
               <Header setSearchQuery={setSearchQuery} />
               <Home />
               <LandingPage searchQuery={searchQuery} />
+              <Footer />
+            </React.Fragment>
+          }
+        />
+
+        <Route
+          path="/international-exams"
+          element={
+            <React.Fragment>
+              <Header setSearchQuery={setSearchQuery} />
+              <Home />
+              <International searchQuery={searchQuery} />
               <Footer />
             </React.Fragment>
           }

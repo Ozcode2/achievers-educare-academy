@@ -25,7 +25,12 @@ const Header = ({ setSearchQuery }) => {
 
   const handleSearch = (event) => {
     // Check if the user is in the checkout route and prevent updating the search query
-    if (!(location.pathname === "/about")) {
+    if (
+      !(
+        location.pathname === "/about" ||
+        location.pathname === "/achievers-educare-academy"
+      )
+    ) {
       setSearchQuery(event.target.value);
     }
   };

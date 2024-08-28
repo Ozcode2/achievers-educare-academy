@@ -19,7 +19,7 @@ const Login = () => {
     auth
       .signInWithEmailAndPassword(email, password)
       .then((auth) => {
-        navigate("/achievers-educare-academy");
+        navigate("/local-exams");
       })
       .catch((error) => {
         setError(error.message);

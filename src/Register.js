@@ -44,7 +44,7 @@ const Register = () => {
       .then((auth) => {
         console.log(auth);
         if (auth) {
-          navigate("/achievers-educare-academy");
+          navigate("/local-exams");
         }
       })
       .catch((error) => {

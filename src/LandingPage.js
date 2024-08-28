@@ -23,24 +23,6 @@ const LandingPage = ({ searchQuery }) => {
         "https://play-lh.googleusercontent.com/xFa1pORFN4rZQYOS4IrDQCSBAhcJuEFHmNhmY_hmCyAj6WORGwV1N3fdi8rT93tNjw",
     },
     {
-      id: "46551172",
-      title: "IELTS TUTORIAL",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGTLV48JuaSJPNrgknuL-mANMOHl7EXTCAtQ&s",
-    },
-    {
-      id: "92558477",
-      title: "SAT TUTORIAL",
-      image:
-        "https://static.wixstatic.com/media/a0a312_065eeb17f34a4732bf95b14e10b670a3~mv2.png/v1/fill/w_585,h_542,al_c,q_85,enc_auto/a0a312_065eeb17f34a4732bf95b14e10b670a3~mv2.png",
-    },
-    {
-      id: "46153469",
-      title: "TOEFL TUTORIAL",
-      image:
-        "https://5.imimg.com/data5/DA/RT/GLADMIN-35137012/toefl-training-course-500x500.png",
-    },
-    {
       id: "34765226",
       title: "JUPEB TUTORIAL",
       image:

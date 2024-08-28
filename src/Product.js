@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
 import { useNavigate } from "react-router-dom";
@@ -6,12 +6,11 @@ import { useNavigate } from "react-router-dom";
 const Product = ({ id, title, image }) => {
   const [{ user }] = useStateValue();
   const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleEnrollClick = () => {
     if (!user) {
-      // Show an alert if the user is not signed in
-      alert("Please sign in to enroll in the course.");
-      navigate("/login"); // Optionally, redirect to the login page
+      setIsModalOpen(true);
       return;
     }
     const phoneNumber = "2348071342141";
@@ -22,6 +21,11 @@ const Product = ({ id, title, image }) => {
     window.open(url, "_blank"); // Opens the WhatsApp link in a new tab
   };
 
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    navigate("/login"); // Optionally, redirect to the login page
+  };
+
   return (
     <div className="product">
       <div className="product__info">
@@ -29,6 +33,18 @@ const Product = ({ id, title, image }) => {
       </div>
       <img src={image} alt="" />
       <button onClick={handleEnrollClick}>Enroll</button>
+
+      {isModalOpen && (
+        <div className="show-modal">
+          <div className="show-modal__content">
+            <h2>Alert!</h2>
+            <p>Please sign in to enroll for the course.</p>
+            <button className="press" onClick={handleCloseModal}>
+              OK
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
