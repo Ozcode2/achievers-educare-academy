@@ -25,7 +25,7 @@ const Home = () => {
             alt=""
             src={process.env.PUBLIC_URL + "/cbt.png"}
           />
-          <div className="imageOne">
+          {/* <div className="imageOne">
             <h1 className="home__imageText">
               INTENSE CBTs<i>...</i>
             </h1>
@@ -35,13 +35,13 @@ const Home = () => {
             <span className="home__textBlock">
               to enable our<i id="key">jambites</i>
             </span>
-            <span className="home__textBlock">have hands-on JAMB experience.</span>
-            <Link to="/login">
-              <button className="sign-up" disabled>
-                Sign-in To get Full Experience
-              </button>
-            </Link>
-          </div>
+            <span className="home__textBlock">
+              have hands-on JAMB experience.
+            </span>
+            <button className="sign-up" disabled>
+              Sign-in To get Full Experience
+            </button>
+          </div> */}
         </div>
         <div className="home_wrap">
           <img
@@ -49,7 +49,7 @@ const Home = () => {
             alt=""
             src={process.env.PUBLIC_URL + "/class.png"}
           />
-          <div className="imageOne">
+          {/* <div className="imageOne">
             <h1 className="home__imageTextOne">
               IDEAL CLASSROOMS<i>...</i>
             </h1>
@@ -62,12 +62,10 @@ const Home = () => {
             <span className="home__textBlock">
               our<i>students</i> learn in good conditions.
             </span>
-            <Link to="/login">
-              <button className="sign-up" disabled>
-                Sign-in To get Full Experience
-              </button>
-            </Link>
-          </div>
+            <button className="sign-up" disabled>
+              Sign-in To get Full Experience
+            </button>
+          </div> */}
         </div>
         <div className="home_wrap">
           <img
@@ -75,7 +73,7 @@ const Home = () => {
             alt=""
             src={process.env.PUBLIC_URL + "/venue.png"}
           />
-          <div className="imageOne">
+          {/* <div className="imageOne">
             <h1 className="home__imageTextTwo">
               QUALIFIED TUTORS<i>...</i>
             </h1>
@@ -86,12 +84,10 @@ const Home = () => {
             <span className="home__textBlock">
               coupled with the passion to teach.
             </span>
-            <Link to="/login">
-              <button className="sign-up" disabled>
-                Sign-in To get Full Experience
-              </button>
-            </Link>
-          </div>
+            <button className="sign-up" disabled>
+              Sign-in To get Full Experience
+            </button>
+          </div> */}
         </div>
       </Slider>
     </div>
