@@ -4,19 +4,33 @@ import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 import { useUser } from "./UserContext";
 import { FaSearch } from "react-icons/fa";
-
+import { useState } from "react";
 const Header = ({ setSearchQuery }) => {
   const [{ user }, dispatch] = useStateValue();
   const { clearUserData } = useUser();
   const location = useLocation();
   const navigate = useNavigate();
+  const [showPopup, setShowPopup] = useState(false);
+
+  // const handleAuthentication = async () => {
+  //   if (user) {
+  //     try {
+  //       await auth.signOut();
+  //       clearUserData();
+  //       navigate("/login");
+  //     } catch (error) {
+  //       console.error("Sign out error: ", error);
+  //     }
+  //   }
+  // };
 
   const handleAuthentication = async () => {
     if (user) {
       try {
         await auth.signOut();
         clearUserData();
-        navigate("/login");
+        setShowPopup(true);
+        setTimeout(() => setShowPopup(false), 3000); // Hide the pop-up after 3 seconds
       } catch (error) {
         console.error("Sign out error: ", error);
       }
@@ -82,6 +96,12 @@ const Header = ({ setSearchQuery }) => {
           </div>
         </Link>
       </div>
+
+      {showPopup && (
+        <div className="signout-popup">
+          <p>You have signed out successfully!</p>
+        </div>
+      )}
     </div>
   );
 };

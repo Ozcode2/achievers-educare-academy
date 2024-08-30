@@ -210,7 +210,13 @@ input:focus {
     outline: none;
 }
 
-@media(max-width: 308px) {
+@media(min-width: 308px) and (max-width: 340px) {
+    .register__container {
+        transform: scale(0.8);
+    }
+}
+
+@media(max-width: 307px) {
     .register__container {
         transform: scale(0.7);
     }

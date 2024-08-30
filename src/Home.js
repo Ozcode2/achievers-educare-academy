@@ -23,7 +23,7 @@ const Home = () => {
           <img
             className="home__image"
             alt=""
-            src={process.env.PUBLIC_URL + "/cbt.png"}
+            src={process.env.PUBLIC_URL + "/edit1.png"}
           />
           {/* <div className="imageOne">
             <h1 className="home__imageText">
@@ -47,7 +47,7 @@ const Home = () => {
           <img
             className="home__imageOne"
             alt=""
-            src={process.env.PUBLIC_URL + "/class.png"}
+            src={process.env.PUBLIC_URL + "/edit2.png"}
           />
           {/* <div className="imageOne">
             <h1 className="home__imageTextOne">
@@ -71,7 +71,7 @@ const Home = () => {
           <img
             className="home__imageTwo"
             alt=""
-            src={process.env.PUBLIC_URL + "/venue.png"}
+            src={process.env.PUBLIC_URL + "/edit3.png"}
           />
           {/* <div className="imageOne">
             <h1 className="home__imageTextTwo">
