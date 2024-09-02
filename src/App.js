@@ -12,8 +12,6 @@ import LandingPage from "./LandingPage";
 import About from "./About";
 import HomePage from "./HomePage";
 import International from "./International";
-import Confetti from "react-confetti";
-import "./App.css";
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -45,11 +43,6 @@ function App() {
 
   return (
     <div className="App">
-      {showConfetti && (
-        <div className="confetti-container">
-          <Confetti />
-        </div>
-      )}
       <Routes>
         <Route
           exact
