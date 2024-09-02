@@ -12,10 +12,13 @@ import LandingPage from "./LandingPage";
 import About from "./About";
 import HomePage from "./HomePage";
 import International from "./International";
+import Confetti from "react-confetti";
+import "./App.css";
 
 function App() {
   const [{}, dispatch] = useStateValue();
   const [searchQuery, setSearchQuery] = useState("");
+  const [showConfetti, setShowConfetti] = useState(true);
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
@@ -35,10 +38,18 @@ function App() {
         });
       }
     });
+
+    const timer = setTimeout(() => setShowConfetti(false), 5000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="App">
+      {showConfetti && (
+        <div className="confetti-container">
+          <Confetti />
+        </div>
+      )}
       <Routes>
         <Route
           exact
