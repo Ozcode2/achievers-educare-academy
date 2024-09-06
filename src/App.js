@@ -42,7 +42,7 @@ function App() {
       <Routes>
         <Route
           exact
-          path="/achievers-educare-academy"
+          path="/"
           element={
             <React.Fragment>
               <Header />
