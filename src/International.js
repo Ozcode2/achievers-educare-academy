@@ -27,6 +27,7 @@ const International = ({ searchQuery }) => {
   const filteredProducts = products.filter((product) =>
     product.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
   return (
     <div className="international-page">
       <div className="page__row">

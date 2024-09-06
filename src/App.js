@@ -16,7 +16,6 @@ import International from "./International";
 function App() {
   const [{}, dispatch] = useStateValue();
   const [searchQuery, setSearchQuery] = useState("");
-  const [showConfetti, setShowConfetti] = useState(true);
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
@@ -36,9 +35,6 @@ function App() {
         });
       }
     });
-
-    const timer = setTimeout(() => setShowConfetti(false), 5000);
-    return () => clearTimeout(timer);
   }, []);
 
   return (

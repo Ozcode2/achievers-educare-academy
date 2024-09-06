@@ -1,5 +1,5 @@
 import "./Header.css";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 import { useUser } from "./UserContext";
@@ -9,20 +9,7 @@ const Header = ({ setSearchQuery }) => {
   const [{ user }, dispatch] = useStateValue();
   const { clearUserData } = useUser();
   const location = useLocation();
-  const navigate = useNavigate();
   const [showPopup, setShowPopup] = useState(false);
-
-  // const handleAuthentication = async () => {
-  //   if (user) {
-  //     try {
-  //       await auth.signOut();
-  //       clearUserData();
-  //       navigate("/login");
-  //     } catch (error) {
-  //       console.error("Sign out error: ", error);
-  //     }
-  //   }
-  // };
 
   const handleAuthentication = async () => {
     if (user) {
