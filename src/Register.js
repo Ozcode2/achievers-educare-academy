@@ -80,7 +80,7 @@ const Register = () => {
 
   return (
     <div className="register">
-      <Link to="/achievers-educare-academy">
+      <Link to="/">
         <img
           className="register__logo"
           src={process.env.PUBLIC_URL + "/achievers.png"}

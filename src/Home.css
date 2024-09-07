@@ -69,7 +69,9 @@
     color: orangered !important;
 }
 
-.home__imageText{
+.home__imageText,
+.home__imageTextOne,
+.home__imageTextTwo {
     font-size: 40px;
     color: #000;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -78,29 +80,7 @@
     line-height: 1.2;
     white-space: nowrap;
     font-weight: bold;
-}
-
-.home__imageTextOne{
-    font-size: 40px;
-    color: #000;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 1px;
-    text-shadow: 3px 2px 3px #666;
-    line-height: 1.2;
-    white-space: nowrap;
-    font-weight: bold;
-}
-
-
-.home__imageTextTwo{
-    font-size: 40px;
-    color: #000;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 1px;
-    text-shadow: 3px 2px 3px #666;
-    line-height: 1.2;
-    white-space: nowrap;
-    font-weight: bold;
+    position: absolute;
 }
 
 i {
@@ -161,11 +141,6 @@ i {
     cursor: not-allowed;
 }
 
-/* .home_wrap {
-    height: 30rem;
-    background-color: #ccc;
-    z-index: -1;
-} */
 
 @media(min-width: 355px) and (max-width: 676px) {
     .slick-prev {

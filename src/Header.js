@@ -29,7 +29,7 @@ const Header = ({ setSearchQuery }) => {
     if (
       !(
         location.pathname === "/about" ||
-        location.pathname === "/achievers-educare-academy"
+        location.pathname === "/"
       )
     ) {
       setSearchQuery(event.target.value);
@@ -38,7 +38,7 @@ const Header = ({ setSearchQuery }) => {
 
   return (
     <div className="header">
-      <Link to="/achievers-educare-academy">
+      <Link to="/">
         <img
           src={process.env.PUBLIC_URL + "/achievers.png"}
           className="header_logo"
@@ -55,7 +55,7 @@ const Header = ({ setSearchQuery }) => {
       <div className="header__search">
         <input
           type="search"
-          placeholder="Search Achievers"
+          placeholder="Search..."
           className="header__searchInput"
           onChange={handleSearch}
         />

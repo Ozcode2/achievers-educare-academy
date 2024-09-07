@@ -28,7 +28,7 @@ const RecoverPassword = () => {
 
   return (
     <div className="recoverPassword">
-      <Link to="/achievers-educare-academy">
+      <Link to="/">
         <img
           className="recoverPassword__logo"
           src={process.env.PUBLIC_URL + "/achievers.png"}

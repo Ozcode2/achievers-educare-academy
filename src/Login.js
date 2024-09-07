@@ -50,7 +50,7 @@ const Login = () => {
 
   return (
     <div className="login">
-      <Link to="/achievers-educare-academy">
+      <Link to="/">
         <img
           className="login__logo"
           alt="Achiever Logo"

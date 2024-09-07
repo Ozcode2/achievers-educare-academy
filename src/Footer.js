@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-container">
         <div className="footer__socialMedia">
-          <a href="/achievers-educare-academy" target="_blank" rel="noreferrer">
+          <a href="/" target="_blank" rel="noreferrer">
             <div className="footer__x">
               <FontAwesomeIcon
                 className="footer__socialIcon"
@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
           </a>
 
-          <a href="/achievers-educare-academy" target="_blank" rel="noreferrer">
+          <a href="/" target="_blank" rel="noreferrer">
             <div className="footer__x">
               <img
                 height={20}
@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
           </a>
 
-          <a href="/achievers-educare-academy" target="_blank" rel="noreferrer">
+          <a href="/" target="_blank" rel="noreferrer">
             <div className="footer__x">
               <FaFacebookF className="footer__socialIcon" />
             </div>
