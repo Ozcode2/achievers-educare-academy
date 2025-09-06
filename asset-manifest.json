@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/achievers-educare-academy/static/css/main.56be9353.css",
-    "main.js": "/achievers-educare-academy/static/js/main.311f8f1a.js",
+    "main.js": "/achievers-educare-academy/static/js/main.3ae02ccf.js",
     "static/media/slick.svg": "/achievers-educare-academy/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/achievers-educare-academy/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/achievers-educare-academy/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/achievers-educare-academy/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/achievers-educare-academy/index.html",
     "main.56be9353.css.map": "/achievers-educare-academy/static/css/main.56be9353.css.map",
-    "main.311f8f1a.js.map": "/achievers-educare-academy/static/js/main.311f8f1a.js.map"
+    "main.3ae02ccf.js.map": "/achievers-educare-academy/static/js/main.3ae02ccf.js.map"
   },
   "entrypoints": [
     "static/css/main.56be9353.css",
-    "static/js/main.311f8f1a.js"
+    "static/js/main.3ae02ccf.js"
   ]
 }
