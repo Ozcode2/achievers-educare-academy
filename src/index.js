@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <StateProvider initialState={initialState} reducer={reducer}>
       <UserProvider>
-        <Router>
+        <Router basename="/achievers-educare-academy">
           <App />
         </Router>
       </UserProvider>
