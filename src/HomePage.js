@@ -20,14 +20,14 @@ const HomePage = () => {
             <p>International Exams</p>
           </div>
           <img src={process.env.PUBLIC_URL + "/international.png"} alt="" />
-          <button onClick={toInternationalPage}>Enroll</button>
+          <button onClick={toInternationalPage}>View</button>
         </div>
         <div className="service">
           <div className="service__info">
             <p>Local Exams</p>
           </div>
           <img src={process.env.PUBLIC_URL + "/school.png"} alt="" />
-          <button onClick={toLandingPage}>Enroll</button>
+          <button onClick={toLandingPage}>View</button>
         </div>
       </div>
     </div>
